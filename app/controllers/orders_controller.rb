@@ -1,7 +1,8 @@
 class OrdersController < ApplicationController
     def invitation 
       if params
-        OrderMailer.new_order_email(params[:email]).deliver_now
+        response = OrderMailer.new_order_email(params[:email]).deliver_now
+        render json: {response: response}
       end
     end
   end

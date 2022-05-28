@@ -47,3 +47,4 @@ gem 'rack-cors'
 gem 'devise'
 gem 'devise-jwt', '~> 0.5.8'
 gem 'pry-rails'
+gem 'dotenv-rails', groups: [:development, :test]
